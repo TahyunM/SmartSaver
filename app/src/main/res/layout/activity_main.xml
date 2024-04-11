@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvExpenseSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Summary: [Your summary here]"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvAmountDueNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount Due Notification: [Your notifications here]"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnIncomeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Income Details"/>
+
+    <Button
+        android:id="@+id/btnExpenseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense Details"/>
+
+    <Button
+        android:id="@+id/btnSavingsOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Savings Overview"/>
+</LinearLayout>
