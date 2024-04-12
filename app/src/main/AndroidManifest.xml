@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SmartSaver"
         tools:targetApi="31">
         <activity
+            android:name=".PaymentDetails"
+            android:exported="false" />
+        <activity
             android:name=".CategoryInput"
             android:exported="false" />
         <activity

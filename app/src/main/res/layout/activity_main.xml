@@ -35,4 +35,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Savings Overview"/>
+
+    <Button
+        android:id="@+id/btnManagePayments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Payments"
+        android:layout_marginTop="16dp"/>
+
 </LinearLayout>

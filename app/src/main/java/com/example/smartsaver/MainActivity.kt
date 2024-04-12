@@ -16,6 +16,14 @@ class MainActivity : AppCompatActivity() {
         val btnIncomeDetails = findViewById<Button>(R.id.btnIncomeDetails)
         val btnExpenseDetails = findViewById<Button>(R.id.btnExpenseDetails)
         val btnSavingsOverview = findViewById<Button>(R.id.btnSavingsOverview)
+
+        val managePaymentsButton = findViewById<Button>(R.id.btnManagePayments)
+        managePaymentsButton.setOnClickListener {
+            val intent = Intent(this, PaymentDetails::class.java)
+            startActivity(intent)
+        }
+
+
         val context: Context = this  // 'this' should be a Context instance
         if (CategoryManager.getCategories(context).isEmpty()) {
             val defaultCategories = listOf(
@@ -45,5 +53,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SavingsOverview::class.java)
             startActivity(intent)
         }
+
+
+
+
     }
 }
