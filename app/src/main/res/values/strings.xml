@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SmartSaver</string>
+    <string name="payment_channel_name">Payment Alerts</string>
+    <string name="payment_channel_description">Notifications for upcoming payments</string>
 </resources>
