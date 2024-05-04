@@ -1,42 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- The root layout is a LinearLayout with vertical orientation -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- TextView for displaying expense summaries -->
+    <!-- TextView for displaying the total amount -->
     <TextView
-        android:id="@+id/tvExpenseSummary"
-        android:layout_width="match_parent"
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Expense Summary: [Your summary here]"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
+        android:textSize="18sp"/>
 
-    <!-- TextView for showing amounts due, updated dynamically -->
+    <!-- TextView for displaying the upcoming payment -->
     <TextView
-        android:id="@+id/tvAmountDueNotification"
-        android:layout_width="match_parent"
+        android:id="@+id/tvUpcomingPayment"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No upcoming payments due."
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
+        android:text="Upcoming Payment:"
+        android:textSize="16sp" />
 
-    <!-- TextView for payment alerts, hidden by default -->
-    <TextView
-        android:id="@+id/tvPaymentAlert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPaymentAlert"
-        android:textColor="@android:color/white"
-        android:text="You have upcoming payments due soon!"
-        android:visibility="gone"
-        android:gravity="center"
-        android:padding="16dp"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Button for navigating to income details -->
+    <!-- Button for navigating to the income details -->
     <Button
         android:id="@+id/btnIncomeDetails"
         android:layout_width="match_parent"
@@ -44,7 +29,7 @@
         android:text="Income Details"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Button for navigating to expense details -->
+    <!-- Button for navigating to the expense details -->
     <Button
         android:id="@+id/btnExpenseDetails"
         android:layout_width="match_parent"
@@ -52,7 +37,7 @@
         android:text="Expense Details"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Button for navigating to savings overview -->
+    <!-- Button for navigating to the savings overview -->
     <Button
         android:id="@+id/btnSavingsOverview"
         android:layout_width="match_parent"

@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- The root layout is a LinearLayout with vertical orientation -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- TextView for the title of the income and expenses PieChart -->
     <TextView
-        android:id="@+id/tvTotalSavings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Savings: [Your total savings here]"
-        android:textSize="18sp"/>
+        android:text="Income and Expenses"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
 
-    <!-- Placeholder for future graph or detailed statistics -->
+    <!-- PieChart for displaying the income and expenses -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChartIncomeExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <!-- TextView for the title of the expenses by category PieChart -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Graph/Statistics Placeholder"
-        android:textSize="16sp"/>
+        android:text="Expenses by Category"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- PieChart for displaying the expenses by category -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChartCategoryExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
 
 </LinearLayout>

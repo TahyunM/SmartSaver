@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- The root layout is a LinearLayout with vertical orientation -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- EditText for entering the income amount -->
     <EditText
-        android:id="@+id/etIncomeAmount"
+        android:id="@+id/etIncome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:hint="Enter income amount"/>
 
+    <!-- Button for saving the income -->
+    <Button
+        android:id="@+id/btnSaveIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Income" />
+
+    <!-- EditText for setting the savings goal -->
     <EditText
         android:id="@+id/etSavingsGoal"
         android:layout_width="match_parent"
@@ -19,15 +29,18 @@
         android:inputType="numberDecimal"
         android:hint="Set savings goal"/>
 
+    <!-- Button for saving the savings goal -->
     <Button
-        android:id="@+id/btnSaveIncome"
+        android:id="@+id/btnSaveGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save Income"/>
+        android:text="Save Goal" />
 
+    <!-- TextView for displaying the monthly budget -->
     <TextView
         android:id="@+id/tvMonthlyBudget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"/>
+
 </LinearLayout>

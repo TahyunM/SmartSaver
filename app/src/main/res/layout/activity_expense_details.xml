@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- The root layout is a LinearLayout with vertical orientation -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- EditText for entering the expense amount -->
     <EditText
         android:id="@+id/etExpenseAmount"
         android:layout_width="match_parent"
@@ -12,11 +14,13 @@
         android:inputType="numberDecimal"
         android:hint="Enter expense amount"/>
 
+    <!-- Spinner for selecting the expense category -->
     <Spinner
         android:id="@+id/spinnerCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <!-- Button for saving the expense -->
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"

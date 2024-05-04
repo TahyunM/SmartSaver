@@ -2,5 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPaymentAlert">#008577</color>
+    <color name="colorIncome">#0000FF</color>
+    <color name="colorExpenses">#FF0000</color>
+    <color name="colorFood">#FF6347</color> <!-- Tomato -->
+    <color name="colorTransport">#40E0D0</color> <!-- Turquoise -->
+    <color name="colorEntertainment">#800080</color> <!-- Purple -->
+    <color name="colorBills">#FFD700</color> <!-- Gold -->
+    <color name="colorOther">#008000</color> <!-- Green -->
 </resources>

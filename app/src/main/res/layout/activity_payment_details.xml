@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- The root layout is a LinearLayout with vertical orientation -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +8,7 @@
     android:padding="16dp"
     tools:context=".PaymentDetails">
 
+    <!-- EditText for entering the payment description -->
     <EditText
         android:id="@+id/etPaymentDescription"
         android:layout_width="match_parent"
@@ -15,6 +17,7 @@
         android:inputType="text"
         android:layout_marginBottom="8dp"/>
 
+    <!-- EditText for entering the payment amount -->
     <EditText
         android:id="@+id/etPaymentAmount"
         android:layout_width="match_parent"
@@ -23,6 +26,7 @@
         android:inputType="numberDecimal"
         android:layout_marginBottom="8dp"/>
 
+    <!-- EditText for entering the payment due date -->
     <EditText
         android:id="@+id/etPaymentDate"
         android:layout_width="match_parent"
@@ -31,6 +35,7 @@
         android:focusable="false"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Button for saving the payment -->
     <Button
         android:id="@+id/btnSavePayment"
         android:layout_width="wrap_content"
